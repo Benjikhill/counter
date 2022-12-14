@@ -1,0 +1,44 @@
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+header {
+  padding: 0rem 3rem 0rem 2rem;
+  background-color: gold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button {
+  font-size: 2rem;
+  background-color: white;
+  border: 2px solid black;
+  box-shadow: 3px 3px 0px white;
+  cursor: pointer;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(gold, white);
+  background-size: var(--counter, 0%) 100%;
+  background-repeat: no-repeat;
+}
+
+#counter {
+  font-size: 5rem;
+}
